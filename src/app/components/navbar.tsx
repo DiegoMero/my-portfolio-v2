@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center h-[15vh] justify-between sticky top-0 z-10 p-3">
+    <nav className="flex items-center h-[15vh] justify-between sticky top-0 z-20 p-3 bg-white">
       <Image
         src='/my-logo.png'
         width={140}
