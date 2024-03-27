@@ -31,7 +31,7 @@ export default function Projects() {
 
 
   return (
-    <ul id="projects" className="p-3 pt-40 bg-[#F7F7F9] flex flex-col gap-20 -mt-10 pb-20">
+    <ul id="projects" className="p-3 pt-40 bg-[#F7F7F9] flex flex-col gap-20 -mt-10 pb-40">
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
