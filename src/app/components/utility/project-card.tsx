@@ -1,6 +1,17 @@
+'use client'
+
+import PopupProjectCard from "./popup-project-card";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ProjectCard(props: any) {
+  const [toggleProjectCard, setToggleProjectCard] = useState(false);
+
+  const handleClick = () => {
+    setToggleProjectCard(!toggleProjectCard);
+    document.body.style.overflow = toggleProjectCard ? 'auto' : 'hidden';
+  }
+
   const { project } = props;
 
   return (
@@ -8,8 +19,8 @@ export default function ProjectCard(props: any) {
       <div className="pl-3 pr-3 pt-6 pb-6 bg-[#6070FF] rounded-lg md:flex-1 md:pt-16 md:pb-16">
         <Image
           src={project.image}
-          width={900}
-          height={1200}
+          width={1200}
+          height={900}
           alt={project.title}
         />
       </div>
@@ -21,7 +32,8 @@ export default function ProjectCard(props: any) {
             <li key={index} className="text-[#6070FF] bg-[#EBEBFF] p-1 rounded-lg">{tool}</li>
           ))}
         </ul>
-        <button className="border-[#6070FF] hover:bg-[#6070FF] hover:text-white border rounded-lg p-3 text-[#396DF2] font-medium active:bg-[#2230D2] active:text-white">See Project</button>
+        <button onClick={handleClick} className="border-[#6070FF] hover:bg-[#6070FF] hover:text-white border rounded-lg p-3 text-[#396DF2] font-medium active:bg-[#2230D2] active:text-white">See Project</button>
+        { toggleProjectCard && <PopupProjectCard project={project} handleClick={handleClick} />}
       </div>
     </li>
   )
