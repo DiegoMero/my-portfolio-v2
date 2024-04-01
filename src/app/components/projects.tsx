@@ -3,36 +3,36 @@ import ProjectCard from "./utility/project-card"
 export default function Projects() {
   const projects = [
     {
-      image: '/super-mario-run-screenshot.png',
+      image: '/amass.png',
       title: 'One-Page Website Design',
-      description: 'A responsive single page that offers a dynamic and user-centered web experience. With a minimalist approach and intuitive navigation, this project combines elegant design with fluid functionality to present information effectively and attractively.',
+      description: 'A responsive single page that offers a dynamic and user-centered web experience. This project combines elegant design with fluid functionality to present information effectively and attractively.',
       tools: ['Next.js', 'Tailwind CSS'],
-      liveLink: '',
-      sourceLink: ''
+      liveLink: 'https://www.amassecuador.com/',
+      sourceLink: 'https://github.com/DiegoMero/amass-beta'
+    },
+    {
+      image: '/petfriendlypage.png',
+      title: 'Pet-Friendly Webpage',
+      description: 'A small foundation with the objective of helping to fulfill the dreams of our pets. Donate and sponsor them to bring them closer every day to fulfilling their dreams.',
+      tools: ['Ruby on Rails', 'Tailwind CSS', 'PostgreSQL'],
+      liveLink: 'https://pet-webpage.onrender.com/',
+      sourceLink: 'https://github.com/DiegoMero/pet-webpage'
     },
     {
       image: '/super-mario-run-screenshot.png',
       title: 'Super Mario Run',
       description: 'Run, jump and smash enemies as you race against the clock and against other participants, do you have what it takes to save the princess? Fortune and glory, kid.',
-      tools: ['HTML', 'JavaScript', 'CSS'],
-      liveLink: '',
-      sourceLink: ''
+      tools: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: 'https://diegomero.github.io/Super-Mario-Run/',
+      sourceLink: 'https://github.com/DiegoMero/Super-Mario-Run'
     },
     {
-      image: '/super-mario-run-screenshot.png',
+      image: '/bookstore.png',
       title: 'Bookstore',
       description: 'An advanced book management solution designed for book lovers. Bookstore provides users with a virtual environment where they can intuitively catalogue, browse and manage their personal collection of books.',
-      tools: ['React', 'CSS'],
-      liveLink: '',
-      sourceLink: ''
-    },
-    {
-      image: '/super-mario-run-screenshot.png',
-      title: 'Pet Friendly Web',
-      description: 'An enjoyable website that uses the database queries to show the different characteristics of pets, feel free to try it and help pets fulfill their dreams!',
-      tools: ['Ruby on Rails', 'Tailwind CSS', 'PostgreSQL'],
-      liveLink: '',
-      sourceLink: ''
+      tools: ['HTML', 'CSS', 'React'],
+      liveLink: 'https://astonishing-youtiao-974e95.netlify.app/',
+      sourceLink: 'https://github.com/DiegoMero/bookstore',
     },
   ]
 
