@@ -1,5 +1,6 @@
 import Social from "./utility/social"
 import TechSkills from "./utility/tech-skills"
+import Link from "next/link"
 
 export default function About() {
   return (
@@ -9,7 +10,9 @@ export default function About() {
         <p className="text-[#344563]">I am passionate about video games and I hope one day to be able to develop new experiences for players, with my love for JavaScript and Ruby. I am confident you can learn something new every day. Don’t hesitate to ask me anything, I’ll be happy to help.</p>
         <h3 className="text-[#7F8CFF]">LET’S CONNECT</h3>
         <Social />
-        <button className="border-[#6070FF] hover:bg-[#6070FF] hover:text-white border rounded-lg p-3 text-[#396DF2] font-medium active:bg-[#2230D2] active:text-white">Get my resume</button>
+        <Link href="https://drive.google.com/file/d/1MDSFGuVSwUtYihmvbdEHJ_HXFreeWC5y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button className="border-[#6070FF] hover:bg-[#6070FF] hover:text-white border rounded-lg p-3 text-[#396DF2] font-medium active:bg-[#2230D2] active:text-white">Get my resume</button>
+        </Link>
       </div>
       <TechSkills />
     </section>
